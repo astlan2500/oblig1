@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kinobiletter</title>
+    <meta name="viewport" content="widt=device-widt, initial-scale=1.0">
+    <title>kinobillett </title>
+
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-        <h1>Test</h1>
+</form>
+<!--Valg av film-->
+<h1>Bestilling av kinobillett</h1>
+<div class="film-valg">
+    <label for="kinobillett"> velg film</label>
+    <select id="film-valg" onchange="kinovalg()">
+        <option value="100"> Avengers : Endgame (100kr)</option>
+        <option value="100"> Anyone but you (100kr)</option>
+        <option value="100"> Grusome meg (100kr)</option>
+        <option value="100"> Barbie (100kr)</option>
+    </select>
+</div>
+<div class="charlotte">
+    <form id="Bestilling">
+        <label for="antall">Antall</label>
+        <input type="antall" id="antall" required>
+        <label for="navn">Navn</label>
+        <input type="navn" id="name" required>
+        <label for="etternavn">Etternavn</label>
+        <input type="etternavn" id="Etternavn" required>
+        <label for="email">E-post:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" required>
+</div>
+
+<button type="button" onclick="buyTicket()">Kjøp billett</button>
+<h2>Alle billetter</h2>
+<button type="button" onclick="deleteAllTickets()">Slett alle billettene</button>
+</form>
+
+
+<ul id="ticketList"></ul>
+
+<script src="index.js"></script>
 </body>
 </html>
