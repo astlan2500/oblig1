@@ -12,7 +12,7 @@
 <!--Valg av film-->
 <h1>Bestilling av kinobillett</h1>
 <div class="film-valg">
-    <label for="kinobillett"> velg film</label>
+    <label for="film-valg"> velg film</label>
     <select id="film-valg" onchange="kinovalg()">
         <option value="100"> Avengers : Endgame (100kr)</option>
         <option value="100"> Anyone but you (100kr)</option>
@@ -25,24 +25,25 @@
         <label for="antall">Antall</label>
         <input type="antall" id="antall" required>
         <label for="navn">Navn</label>
-        <input type="navn" id="name" required>
+        <input type="navn" id="navn" required>
         <label for="etternavn">Etternavn</label>
-        <input type="etternavn" id="Etternavn" required>
+        <input type="etternavn" id="etternavn" required>
         <label for="email">E-post:</label>
         <input type="email" id="email" required>
 
-        <label for="phone">Telefonnummer:</label>
-        <input type="tel" id="phone" required>
+        <label for="tlfnr">Telefonnummer:</label>
+        <input type="tel" id="tlfnr" required>
 </div>
 
-<button type="button" onclick="buyTicket()">Kjøp billett</button>
+
+<button type="button" onclick="kjopBilett()">Kjøp billett</button>
 <h2>Alle billetter</h2>
-<button type="button" onclick="deleteAllTickets()">Slett alle billettene</button>
+<button type="button" onclick="SlettBilett()">Slett alle billettene</button>
 </form>
 
 
 <ul id="ticketList"></ul>
 
-<script src="index.js"></script>
+<script src="java.js"></script>
 </body>
 </html>
