@@ -2,32 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widt=device-widt, initial-scale=1.0">
+    <meta name="viewport" content="width=device-widt, initial-scale=1.0">
     <title>kinobillett </title>
 
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-</form>
 <!--Valg av film-->
 <h1>Bestilling av kinobillett</h1>
 <div class="film-valg">
     <label for="film-valg"> velg film</label>
     <select id="film-valg" onchange="kinovalg()">
-        <option value="100"> Avengers : Endgame (100kr)</option>
-        <option value="100"> Anyone but you (100kr)</option>
-        <option value="100"> Grusome meg (100kr)</option>
-        <option value="100"> Barbie (100kr)</option>
+        <option value="110"> Avengers : Endgame (110kr)</option>
+        <option value="120"> Anyone but you (120kr)</option>
+        <option value="130"> Grusome meg (130kr)</option>
+        <option value="140"> Barbie (140kr)</option>
     </select>
 </div>
 <div class="charlotte">
-    <form id="Bestilling">
+
         <label for="antall">Antall</label>
-        <input type="antall" id="antall" required>
+        <input type="number" id="antall" required>
         <label for="navn">Navn</label>
-        <input type="navn" id="navn" required>
+        <input type="text" id="navn" required>
         <label for="etternavn">Etternavn</label>
-        <input type="etternavn" id="etternavn" required>
+        <input type="text" id="etternavn" required>
         <label for="email">E-post:</label>
         <input type="email" id="email" required>
 
@@ -36,13 +35,13 @@
 </div>
 
 
-<button type="button" onclick="kjopBilett()">Kjøp billett</button>
+<button type="button" onclick="kjopBilett()">Kjop billett</button>
 <h2>Alle billetter</h2>
 <button type="button" onclick="SlettBilett()">Slett alle billettene</button>
 </form>
 
 
-<ul id="ticketList"></ul>
+<ul id="bilettListe"></ul>
 
 <script src="java.js"></script>
 </body>
